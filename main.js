@@ -4,8 +4,14 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const errorModal = document.getElementById('modal')
+errorModal.hidden = true
 
+const clickOnEmptyHeart = document.querySelectorAll('.like-glyph')
 
+clickOnEmptyHeart.addEventListener('click', () => {
+  return FULL_HEART;
+})
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
